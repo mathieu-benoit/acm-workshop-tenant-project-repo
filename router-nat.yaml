@@ -1,0 +1,18 @@
+apiVersion: compute.cnrm.cloud.google.com/v1beta1
+kind: ComputeRouterNAT
+metadata:
+  name: 
+  namespace: acm-workshop-742-tenant
+  annotations:
+    config.kubernetes.io/depends-on: compute.cnrm.cloud.google.com/namespaces/acm-workshop-742-tenant/ComputeSubnetwork/,compute.cnrm.cloud.google.com/namespaces/acm-workshop-742-tenant/ComputeRouter/
+spec:
+  natIpAllocateOption: AUTO_ONLY
+  region: 
+  routerRef:
+    name: 
+  sourceSubnetworkIpRangesToNat: LIST_OF_SUBNETWORKS
+  subnetwork:
+  - subnetworkRef:
+      name: 
+    sourceIpRangesToNat:
+    - ALL_IP_RANGES

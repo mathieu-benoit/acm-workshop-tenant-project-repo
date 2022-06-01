@@ -1,0 +1,8 @@
+apiVersion: compute.cnrm.cloud.google.com/v1beta1
+kind: ComputeNetwork
+metadata:
+  name: 
+  namespace: acm-workshop-742-tenant
+spec:
+  routingMode: REGIONAL
+  autoCreateSubnetworks: false
