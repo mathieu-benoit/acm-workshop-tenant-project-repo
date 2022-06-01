@@ -1,7 +1,7 @@
 apiVersion: compute.cnrm.cloud.google.com/v1beta1
 kind: ComputeNetwork
 metadata:
-  name: 
+  name: gke
   namespace: acm-workshop-742-tenant
 spec:
   routingMode: REGIONAL

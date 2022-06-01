@@ -1,11 +1,11 @@
 apiVersion: compute.cnrm.cloud.google.com/v1beta1
 kind: ComputeRouter
 metadata:
-  name: 
+  name: gke
   namespace: acm-workshop-742-tenant
   annotations:
-    config.kubernetes.io/depends-on: compute.cnrm.cloud.google.com/namespaces/acm-workshop-742-tenant/ComputeNetwork/
+    config.kubernetes.io/depends-on: compute.cnrm.cloud.google.com/namespaces/acm-workshop-742-tenant/ComputeNetwork/gke
 spec:
   networkRef:
-    name: 
-  region: 
+    name: gke
+  region: us-east4
