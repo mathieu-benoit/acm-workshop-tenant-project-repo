@@ -1,0 +1,8 @@
+apiVersion: artifactregistry.cnrm.cloud.google.com/v1beta1
+kind: ArtifactRegistryRepository
+metadata:
+  name: containers
+  namespace: acm-workshop-742-tenant
+spec:
+  format: DOCKER
+  location: us-east4
