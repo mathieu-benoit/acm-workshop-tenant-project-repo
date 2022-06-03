@@ -29,10 +29,6 @@ spec:
     enableComponents:
       - "SYSTEM_COMPONENTS"
       - "WORKLOADS"
-  masterAuthorizedNetworksConfig:
-    cidrBlocks:
-    - cidrBlock: 35.193.226.72/32
-      displayName: local
   monitoringConfig:
     enableComponents:
       - "SYSTEM_COMPONENTS"
