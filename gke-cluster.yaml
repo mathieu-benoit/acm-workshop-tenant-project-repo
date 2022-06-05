@@ -44,7 +44,7 @@ spec:
   privateClusterConfig:
     enablePrivateEndpoint: false
     enablePrivateNodes: true
-    masterIpv4CidrBlock: 34.133.145.14/28
+    masterIpv4CidrBlock: 34.121.127.135/28
   releaseChannel:
     channel: RAPID
   subnetworkRef:
