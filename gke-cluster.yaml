@@ -31,7 +31,7 @@ spec:
       - "WORKLOADS"
   masterAuthorizedNetworksConfig:
     cidrBlocks:
-    - cidrBlock: 35.238.254.6/32
+    - cidrBlock: 34.69.254.55/32
       displayName: local
   monitoringConfig:
     enableComponents:
