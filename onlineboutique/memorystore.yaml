@@ -12,3 +12,4 @@ spec:
   redisVersion: REDIS_6_X
   region: us-east4
   tier: BASIC
+  transitEncryptionMode: SERVER_AUTHENTICATION
