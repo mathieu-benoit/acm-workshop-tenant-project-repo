@@ -31,7 +31,7 @@ spec:
       - "WORKLOADS"
   masterAuthorizedNetworksConfig:
     cidrBlocks:
-    - cidrBlock: 35.202.220.40/32
+    - cidrBlock: 23.251.153.172/32
       displayName: local
   monitoringConfig:
     enableComponents:
@@ -44,7 +44,7 @@ spec:
   privateClusterConfig:
     enablePrivateEndpoint: false
     enablePrivateNodes: true
-    masterIpv4CidrBlock: 34.133.107.255/28
+    masterIpv4CidrBlock: 35.188.17.191/28
   releaseChannel:
     channel: RAPID
   subnetworkRef:
