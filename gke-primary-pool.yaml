@@ -1,0 +1,29 @@
+apiVersion: container.cnrm.cloud.google.com/v1beta1
+kind: ContainerNodePool
+metadata:
+  name: gke3-primary
+  namespace: acm-workshop-618-tenant
+  annotations:
+    config.kubernetes.io/depends-on: container.cnrm.cloud.google.com/namespaces/acm-workshop-618-tenant/ContainerCluster/gke3
+spec:
+  clusterRef:
+    name: gke3
+  location: northamerica-northeast1
+  management:
+    autoRepair: true
+    autoUpgrade: true
+  nodeConfig:
+    imageType: COS_CONTAINERD
+    diskSizeGb: 100
+    diskType: pd-ssd
+    labels:
+      gke.io/nodepool: primary
+    machineType: n2d-standard-4
+    oauthScopes:
+      - https://www.googleapis.com/auth/cloud-platform
+    shieldedInstanceConfig:
+      enableIntegrityMonitoring: true
+      enableSecureBoot: true
+    serviceAccountRef:
+      name: gke-primary-pool
+  nodeCount: 3
