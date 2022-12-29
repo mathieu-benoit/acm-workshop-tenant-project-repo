@@ -6,7 +6,7 @@ metadata:
   annotations:
     cnrm.cloud.google.com/project-id: acm-workshop-618-tenant
     cnrm.cloud.google.com/remove-default-node-pool: "true"
-    config.kubernetes.io/depends-on: compute.cnrm.cloud.google.com/namespaces/acm-workshop-618-tenant/ComputeSubnetwork/gke2
+    config.kubernetes.io/depends-on: compute.cnrm.cloud.google.com/namespaces/acm-workshop-618-tenant/ComputeSubnetwork/gke
   labels:
     mesh_id: proj-827641929724
 spec:
