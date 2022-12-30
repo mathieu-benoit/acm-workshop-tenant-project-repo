@@ -1,0 +1,16 @@
+apiVersion: iam.cnrm.cloud.google.com/v1beta1
+kind: IAMPolicyMember
+metadata:
+  name: artifactregistry-reader
+  namespace: acm-workshop-618-tenant
+  annotations:
+    config.kubernetes.io/depends-on: iam.cnrm.cloud.google.com/namespaces/acm-workshop-618-tenant/IAMServiceAccount/gke-primary-pool,artifactregistry.cnrm.cloud.google.com/namespaces/acm-workshop-618-tenant/ArtifactRegistryRepository/containers
+spec:
+  memberFrom:
+    serviceAccountRef:
+      name: gke-primary-pool
+      namespace: acm-workshop-618-tenant
+  resourceRef:
+    kind: ArtifactRegistryRepository
+    name: containers
+  role: roles/artifactregistry.reader
