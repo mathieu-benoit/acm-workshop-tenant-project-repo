@@ -1,0 +1,14 @@
+apiVersion: spanner.cnrm.cloud.google.com/v1beta1
+kind: SpannerDatabase
+metadata:
+  name: carts
+  namespace: acm-workshop-618-tenant
+  annotations:
+    config.kubernetes.io/depends-on: spanner.cnrm.cloud.google.com/namespaces/acm-workshop-618-tenant/SpannerInstance/onlineboutique
+spec:
+  instanceRef:
+    name: onlineboutique
+  databaseDialect: GOOGLE_STANDARD_SQL
+  ddl:
+  - "CREATE TABLE CartItems (userId STRING(1024), productId STRING(1024), quantity INT64,) PRIMARY KEY (userId, productId)"
+  - "CREATE INDEX CartItemsByUserId ON CartItems(userId)"
