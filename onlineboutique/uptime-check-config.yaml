@@ -11,7 +11,7 @@ spec:
   monitoredResource:
     type: "uptime_url"
     filterLabels:
-      host: bankofanthos.endpoints.acm-workshop-618-tenant.cloud.goog
+      host: onlineboutique.endpoints.acm-workshop-618-tenant.cloud.goog
       project_id: acm-workshop-618-tenant
   httpCheck:
     port: 443
