@@ -4,7 +4,7 @@ metadata:
   name: uptimecheckconfig-bankofanthos
 spec:
   projectRef:
-    name: acm-workshop-618-tenant
+    external: projects/acm-workshop-618-tenant
   displayName: bankofanthos
   period: 900s
   timeout: 5s

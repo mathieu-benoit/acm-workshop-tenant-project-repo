@@ -5,6 +5,6 @@ metadata:
   namespace: acm-workshop-618-tenant
 spec:
   projectRef:
-    name: acm-workshop-618-tenant
+    external: acm-workshop-618-tenant
   location: global
   resourceID: servicemesh
