@@ -1,0 +1,20 @@
+apiVersion: monitoring.cnrm.cloud.google.com/v1beta1
+kind: MonitoringUptimeCheckConfig
+metadata:
+  name: uptimecheckconfig-myblog
+spec:
+  projectRef:
+    external: projects/acm-workshop-618-tenant
+  displayName: myblog
+  period: 900s
+  timeout: 5s
+  monitoredResource:
+    type: "uptime_url"
+    filterLabels:
+      host: alwaysupalwayson.com
+      project_id: acm-workshop-618-tenant
+  httpCheck:
+    port: 443
+    requestMethod: GET
+    useSsl: true
+    validateSsl: true
