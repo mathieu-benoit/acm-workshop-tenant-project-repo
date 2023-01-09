@@ -14,7 +14,7 @@ spec:
       host: acm-workshop.alwaysupalwayson.com
       project_id: acm-workshop-618-tenant
   httpCheck:
+    port: 443
     requestMethod: GET
     useSsl: true
-    port: 443
-  validateSsl: true
+    validateSsl: true
