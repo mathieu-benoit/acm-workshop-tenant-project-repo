@@ -3,12 +3,13 @@ kind: MonitoringAlertPolicy
 metadata:
   annotations:
     cnrm.cloud.google.com/project-id: acm-workshop-618-tenant
-  name: monitoringalertpolicy-sample-networkconnectivity
+  name: monitoring-alert-policy-uptime-checks
 spec:
   displayName: Failure of uptime checks
   enabled: true
   notificationChannels:
     - name: monitoringnotificationchannel-email
+  combiner: OR
   conditions:
   - displayName: Failure of uptime check_id uptime-check-for-google-cloud-site
     conditionThreshold:
