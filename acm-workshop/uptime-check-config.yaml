@@ -4,7 +4,7 @@ metadata:
   name: uptimecheckconfig-acm-workshop
 spec:
   projectRef:
-    external: projects/acm-workshop-618-tenant
+    name: projects/acm-workshop-618-tenant
   displayName: acm-workshop
   period: 900s
   timeout: 5s

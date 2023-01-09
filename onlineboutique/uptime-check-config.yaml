@@ -4,7 +4,7 @@ metadata:
   name: uptimecheckconfig-onlineboutique
 spec:
   projectRef:
-    external: projects/acm-workshop-618-tenant
+    name: projects/acm-workshop-618-tenant
   displayName: onlineboutique
   period: 900s
   timeout: 5s
