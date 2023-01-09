@@ -11,7 +11,7 @@ spec:
   monitoredResource:
     type: "uptime_url"
     filterLabels:
-      host: alwaysupalwayson.com
+      host: whereami.endpoints.acm-workshop-618-tenant.cloud.goog
       project_id: acm-workshop-618-tenant
   httpCheck:
     port: 443
