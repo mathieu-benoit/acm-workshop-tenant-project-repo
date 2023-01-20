@@ -10,7 +10,6 @@ spec:
     layer7DdosDefenseConfig:
       enable: true
   advancedOptionsConfig:
-    jsonParsing: STANDARD
     logLevel: VERBOSE
   rule:
   - action: allow
