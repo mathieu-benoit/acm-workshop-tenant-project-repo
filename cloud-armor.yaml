@@ -10,10 +10,6 @@ spec:
     layer7DdosDefenseConfig:
       enable: true
   advancedOptionsConfig:
-    jsonCustomConfig:
-      contentTypes:
-      - application/json
-      - application/x-www-form-urlencoded
     jsonParsing: STANDARD
     logLevel: VERBOSE
   rule:
@@ -32,10 +28,10 @@ spec:
         expression: "evaluatePreconfiguredExpr('xss-v33-canary')"
     priority: 1000
   - action: deny(403)
-    description: "SQL injection level 3"
+    description: "SQL injection level 2"
     match:
       expr:
-        expression: "evaluatePreconfiguredWaf('sqli-v33-canary', {'sensitivity': 3, 'opt_out_rule_ids': ['owasp-crs-v030301-id942200-sqli', 'owasp-crs-v030301-id942260-sqli', 'owasp-crs-v030301-id942430-sqli', 'owasp-crs-v030301-id942431-sqli', 'owasp-crs-v030301-id942460-sqli', 'owasp-crs-v030301-id942490-sqli']})"
+        expression: "evaluatePreconfiguredWaf('sqli-v33-canary', {'sensitivity': 2, 'opt_out_rule_ids': ['owasp-crs-v030301-id942200-sqli', 'owasp-crs-v030301-id942260-sqli', 'owasp-crs-v030301-id942430-sqli']})"
     priority: 2000
   - action: deny(403)
     description: "Local file inclusion"
