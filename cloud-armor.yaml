@@ -10,6 +10,10 @@ spec:
     layer7DdosDefenseConfig:
       enable: true
   advancedOptionsConfig:
+    jsonCustomConfig:
+      contentTypes:
+      - application/json
+      - application/x-www-form-urlencoded
     jsonParsing: STANDARD
     logLevel: VERBOSE
   rule:
