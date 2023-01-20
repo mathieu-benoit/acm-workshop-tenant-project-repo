@@ -28,10 +28,10 @@ spec:
         expression: "evaluatePreconfiguredExpr('xss-v33-canary')"
     priority: 1000
   - action: deny(403)
-    description: "SQL injection level 1"
+    description: "SQL injection level 2"
     match:
       expr:
-        expression: "evaluatePreconfiguredWaf('sqli-v33-canary', {'sensitivity': 1})"
+        expression: "evaluatePreconfiguredWaf('sqli-v33-canary', {'sensitivity': 2})"
     priority: 2000
   - action: deny(403)
     description: "Local file inclusion"
