@@ -21,7 +21,7 @@ spec:
         policyDir: .
         secretType: none
         syncBranch: main
-        syncRepo: 
+        syncRepo: https://github.com/mathieu-benoit/acm-workshop-gke-configs-repo
     policyController:
       enabled: true
       referentialRulesEnabled: true
